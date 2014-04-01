@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcStap", "MvcStap\MvcStap.csproj", "{33C5E70A-7892-4153-BE60-618237D54A8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcStap.Tests", "MvcStap.Tests\MvcStap.Tests.csproj", "{5FE7A8CD-64B0-4C01-A50B-5B904DA962CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33C5E70A-7892-4153-BE60-618237D54A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C5E70A-7892-4153-BE60-618237D54A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C5E70A-7892-4153-BE60-618237D54A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C5E70A-7892-4153-BE60-618237D54A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE7A8CD-64B0-4C01-A50B-5B904DA962CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE7A8CD-64B0-4C01-A50B-5B904DA962CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE7A8CD-64B0-4C01-A50B-5B904DA962CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE7A8CD-64B0-4C01-A50B-5B904DA962CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

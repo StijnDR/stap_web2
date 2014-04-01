@@ -1,0 +1,76 @@
+﻿@model MvcStap.Models.Stage
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Stage</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Titel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Titel)
+            @Html.ValidationMessageFor(model => model.Titel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OmschrijvingOpdracht)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OmschrijvingOpdracht)
+            @Html.ValidationMessageFor(model => model.OmschrijvingOpdracht)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SpecialisatieOpdracht)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SpecialisatieOpdracht)
+            @Html.ValidationMessageFor(model => model.SpecialisatieOpdracht)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Semester)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Semester)
+            @Html.ValidationMessageFor(model => model.Semester)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AantalStudentenOpdracht)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AantalStudentenOpdracht)
+            @Html.ValidationMessageFor(model => model.AantalStudentenOpdracht)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Stagementor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Stagementor)
+            @Html.ValidationMessageFor(model => model.Stagementor)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

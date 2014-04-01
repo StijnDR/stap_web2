@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MvcStap.Models.Stage>
+
+@{
+    ViewBag.Title = "Stages";
+}
+
+<h2>Stages</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titel)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.OmschrijvingOpdracht)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.SpecialisatieOpdracht)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AantalStudentenOpdracht)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stagementor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OmschrijvingOpdracht)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SpecialisatieOpdracht)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AantalStudentenOpdracht)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stagementor)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @*@Html.ActionLink("Details", "Details", new { id=item.ID }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

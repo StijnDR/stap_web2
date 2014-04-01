@@ -1,0 +1,57 @@
+﻿@model MvcStap.Models.Stage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Stage</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OmschrijvingOpdracht)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OmschrijvingOpdracht)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SpecialisatieOpdracht)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SpecialisatieOpdracht)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Semester)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Semester)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AantalStudentenOpdracht)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AantalStudentenOpdracht)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Stagementor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Stagementor)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

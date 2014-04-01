@@ -1,0 +1,61 @@
+﻿@model MvcStap.Models.Stage
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Stage</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OmschrijvingOpdracht)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OmschrijvingOpdracht)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SpecialisatieOpdracht)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SpecialisatieOpdracht)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Semester)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Semester)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AantalStudentenOpdracht)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AantalStudentenOpdracht)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Stagementor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Stagementor)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
